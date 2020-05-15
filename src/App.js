@@ -135,8 +135,8 @@ class App extends Component {
     
       // console.log(this.state.items)
     return ( 
-      <>
-      Grocery List
+      <div className="App">
+      <h2>Grocery List</h2>
       <InputField click={()=>this.addToListHandler()} 
         itemHandler={this.itemNameHandler}
         item={this.state.currentItem}
@@ -145,7 +145,8 @@ class App extends Component {
         enterPressed={this._handleKeyPress}
        />
       <Validation nameLength={this.state.currentItem.name.length}/>
-      <table>
+      <br /><br />
+      <table className="Table">
           <tr>
               <th>No.</th>
               <th>Item Name</th>
@@ -154,7 +155,7 @@ class App extends Component {
           </tr>  
           {items}
       </table>
-      </>
+      </div>
     );
   }
 }
