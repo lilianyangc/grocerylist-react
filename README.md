@@ -1,5 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Grocery List App
 
+A simple grocery list app where you can add and delete items.
+Update the item name by pressing edit. Increase and decrease the number of items pressing the + and - buttons.
+
+----------------
 ## Available Scripts
 
 In the project directory, you can run:
