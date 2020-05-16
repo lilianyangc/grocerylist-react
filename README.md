@@ -3,6 +3,8 @@
 A simple grocery list app where you can add and delete items.
 Update the item name by pressing edit. Increase and decrease the number of items pressing the + and - buttons.
 
+Deployed Link:
+[https://grocerylist-app.herokuapp.com/]
 ----------------
 ## Available Scripts
 
