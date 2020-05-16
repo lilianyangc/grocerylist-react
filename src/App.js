@@ -3,6 +3,7 @@ import './App.css';
 import Item from './components/Item/Item';
 import InputField from './components/InputField/InputField';
 import Validation from './components/Validation/Validation';
+import Jumbotron from 'react-bootstrap/Jumbotron'
 
 class App extends Component {
   state = { items:[{name: "milk", pcs: 1, enabled: false}],
@@ -136,7 +137,8 @@ class App extends Component {
       // console.log(this.state.items)
     return ( 
       <div className="App">
-      <h2>Grocery List</h2>
+      <br />
+      <Jumbotron fluid><h1>Grocery List</h1></Jumbotron>
       <InputField click={()=>this.addToListHandler()} 
         itemHandler={this.itemNameHandler}
         item={this.state.currentItem}

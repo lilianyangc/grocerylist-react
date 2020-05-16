@@ -14,8 +14,8 @@ export default function Item(props) {
                     <Button onClick={props.minusBtn}>-</Button>
                 </td>
                 <td>&nbsp;
-                    <Button onClick={props.deleteBtn}>Delete</Button>
-                    <Button onClick={props.onEditClick}>Edit</Button>
+                    <Button variant="danger" onClick={props.deleteBtn}>Delete</Button>
+                    <Button variant="warning" onClick={props.onEditClick}>Edit</Button>
                 </td>
             </tr>
             )
@@ -25,12 +25,12 @@ export default function Item(props) {
                 <td>{props.index+1}.</td>
                 <td><input value={props.name} onChange={props.onNameChange}/></td>
                 <td>{props.pcs} &nbsp;
-                    <button onClick={props.addBtn}>+</button>
-                    <button onClick={props.minusBtn}>-</button>
+                    <Button onClick={props.addBtn}>+</Button>
+                    <Button onClick={props.minusBtn}>-</Button>
                 </td>
                 <td>&nbsp;
-                    <button onClick={props.deleteBtn}>Delete</button>
-                    <button onClick={props.onEditClick}>Save</button>
+                    <Button  variant="danger" onClick={props.deleteBtn}>Delete</Button>
+                    <Button variant="success"onClick={props.onEditClick}>Save</Button>
                 </td>
             </tr>
         )
